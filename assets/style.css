@@ -135,7 +135,9 @@ option{
     padding-top: 100px;
 }
 .service-section .service-box{
-    border: 1px solid white;
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #898887, #2e2f34) 1;
     text-align: center;
     width: 30%;
     padding: 35px;
@@ -241,27 +243,57 @@ option{
     background-size: cover;
     padding: 190px 0;
     position: relative;
+    z-index: 0;
 }
 .call-to-action:after{
     top: 0;
     content: '';
     background-image: url(./images/Rectangle6774.png);
     width: 100%;
-    height: 100%;
+    height: 100vh;
     z-index: -1;
     position: absolute;
     background-repeat: no-repeat;
-    object-fit: cover;
-    left: 0px;
+    background-size: 100% 100%;
 }
 .call-to-action h2{
     font-size: 60px;
     text-align: center;
     font-weight: 500;
     color: #fcfcfc;
-    padding: 0 200px;
+    padding: 0 200px 30px;
     line-height: 1.3;
+
 }
+.call-to-action .btn{
+    width: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.call-to-action .btn:after{
+    content: '';
+    background-image: url(./images/RightArrow.svg);
+    position: absolute;
+    width: 65px;
+    height: 15px;
+    background-repeat: no-repeat;
+    top: 8px;
+    right: -25px;
+}
+/* .call-to-action .content-box{
+    position: relative;
+}
+.call-to-action .content-box:after{
+    content: '';
+    background-image: url('./images/Diamond-left.png');
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    left: 0;
+    top: 0;
+} */
 .black-text{
     color: #151515;
 }
